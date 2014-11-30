@@ -1,0 +1,58 @@
+application: society-of-letters
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /
+  static_files: static/html/index.html
+  upload: static
+
+- url: /api/.*
+  script: main.app
+
+- url: /css/(.+)
+  static_files: static/css/\1
+  upload: static/css
+
+- url: /js/(.+)
+  static_files: static/js/\1
+  upload: static/js
+
+- url: /images/(.+)
+  static_files: static/images/\1
+  upload: static/images
+
+- url: /components/(.+)
+  static_files: static/html/components/\1
+  upload: static
+
+- url: /admin
+  static_files: static/html/admin/index.html
+  upload: static
+  login: admin
+
+- url: /admin/api/.*
+  script: admin.app
+
+- url: /admin/(.+)
+  static_files: static/html/admin/\1.html
+  upload: static
+  login: admin
+
+- url: /(.+)
+  static_files: static/html/\1.html
+  upload: static
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+builtins:
+- deferred: on
+- appstats: on

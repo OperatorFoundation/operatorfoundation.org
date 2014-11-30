@@ -1,0 +1,14 @@
+<link rel="import" href="/js/lib/polymer/components/core-menu/core-menu.html">
+<link rel="import" href="/js/lib/polymer/components/core-item/core-item.html">
+
+<polymer-element name="society-admin-menu" attributes="responsiveWidth mode" noscript>
+  <template>
+    <core-menu theme="core-light-theme">
+      <core-item icon="forward" label="Salons"><a href="/salons"></a></core-item>
+      <core-item label="Add Salon"><a href="/admin/addSalon"></a></core-item>
+      <core-item label="Applications"><a href="/admin/applications"></a></core-item>
+      <core-item label="Aspects"><a href="/admin/aspects"></a></core-item>
+      <core-item label="Items"><a href="/admin/items"></a></core-item>
+    </core-menu>
+  </template>
+</polymer-element>

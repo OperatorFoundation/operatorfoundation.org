@@ -1,0 +1,60 @@
+<link rel="import" href="../polymer/polymer.html">
+<script src="../marked/lib/marked.js"></script>
+
+<!-- mark-down definition -->
+<polymer-element name="mark-down" attributes="text">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div id="markdown" part="markdown"></div>
+  </template>
+  <script>
+    Polymer("mark-down", {
+      ready: function() {
+        this.text = this.trim(this.textContent);
+      },
+      textChanged: function() {
+        this.$.markdown.innerHTML = marked(this.text);
+      },
+      // Thanks Ryan Seddon! (https://github.com/ryanseddon/markdown-component)
+      // Remove all leading/trailing whitespace so it's not confused as 
+      // a code block
+      trim: function(str) {
+        return str.replace(/^[^\S\n]+/gm,'');
+      }
+    });
+  </script>
+</polymer-element>
+
+<!-- mark-down-editor definition, extends mark-down -->
+<polymer-element name="mark-down-editor" extends="mark-down" noscript>
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      #markup {
+        float: left;
+        width: 30%;
+        margin-right: 50px;
+      }
+
+      #editor {
+        width: 100%;
+        height: 220px;
+      }
+
+      #markdown {
+        overflow: hidden;
+      }
+    </style>
+    <div id="markup" part="markup">
+      <textarea id="editor" part="editor" value="{{ text }}"></textarea>
+    </div>
+    <div id="markdown" part="markdown"></div>
+  </template>
+</polymer-element>
