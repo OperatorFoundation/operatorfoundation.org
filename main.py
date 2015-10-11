@@ -20,10 +20,5 @@ from pages import *
 from api import *
 
 app = webapp2.WSGIApplication([
-    ('/api/user', UserService),
-    ('/api/salon', SalonService),
-    ('/api/draft', DraftService),
-    ('/api/post', PostService),
-    ('/api/item', ItemService),
-    ('/api/todo', TODOService)
+  ('/api/user', UserService)
 ], debug=True)
