@@ -1,4 +1,4 @@
-LettersWeb
+operatorfoundation.org
 ==========
 
-Society of Letters backend and web-based interface
+Website for http://OperatorFoundation.org
