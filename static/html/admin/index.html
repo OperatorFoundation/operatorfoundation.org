@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Salons | Society of Letters</title>
+    <title>Welcome | Operator Foundation Admin</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <link href="/css/polymer.css" rel="stylesheet" type="text/css"/>
     <script src="/js/lib/polymer/components/platform/platform.js"></script>
@@ -8,10 +8,12 @@
   </head>
   <body fullbleed unresolved touch-action="auto">
     <core-scaffold>
-      <core-header-panel navigation flex mode="seamed">        
+      <core-header-panel navigation flex mode="seamed">
         <core-toolbar>Menu</core-toolbar>
-        <society-admin-menu></society-admin-menu>
-      </core-header-panel>  
+        <operator-admin-menu></operator-admin-menu>
+      </core-header-panel>
+
+      <div tool>Operator Admin</div>
     </core-scaffold>
   </body>
 
@@ -24,12 +26,12 @@
   <link rel="import" href="/js/lib/polymer/components/paper-input/paper-input.html">
   <link rel="import" href="/js/lib/polymer/components/paper-fab/paper-fab.html">
 
-  <link rel="import" href="/components/society-admin-menu/society-admin-menu.html">
+  <link rel="import" href="/components/operator-admin-menu/operator-admin-menu.html">
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="/js/lib/knockout.js"></script>
-  <script type="text/javascript" src="/js/lib/jquery.query-object.js"></script>  
+  <script type="text/javascript" src="/js/lib/jquery.query-object.js"></script>
   <script type="text/javascript" src="/js/lib/debug.js"></script>
   <script type="text/javascript" src="/js/lib/jsonrpc.js"></script>
   <script type="text/javascript">
