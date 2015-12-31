@@ -31,18 +31,16 @@
 			margin: 15px auto;
 		}
 		a:link {text-decoration:none;color:#363636;}
-	
 		a:visited {text-decoration:none;color:#363636;}
 		a:hover {text-decoration:none;color:#363636;}
 		a:active {text-decoration:none;color:#ffffff;}
+	
 		div.navHolder{
   		background-color: #f0f0f0;
 			width: 100%;
 			height: 60px;
-			z-index: -2;
-			position: relative;
 		}
-		div.nav{
+div.nav{
 			font-family: 'Quicksand', helvetica, arial, sans-serif;
 			color: #363636;
 			width: 476px;
@@ -52,15 +50,17 @@
 		}
 		div.nav li{
 			float: left;
-			padding-left: 26px;
 			padding-right: 2px;
 			padding-top: 25px;
 			padding-bottom: 8px;
+			list-style: none;
 		}
 		div.page{
-			color: #ffffff;
+			color: #94e2a6;
 		}
-		div.circle{
+		
+		
+	/*	div.circle{
 			width: 108px;
 			height: 109px;
 			background-color: #202020;
@@ -69,9 +69,10 @@
 	        border-radius: 10em;
 	        z-index: -1;
 	        position: absolute;
-	        margin-left: 124px;
+	        margin-left: 37px;
 	        margin-top: 5px;
 		}
+		*/
 		div.banTop{
 		  border-top: 1px solid #202020;
 			width: 100%;
@@ -155,8 +156,52 @@
 			text-align: center;
 			line-height: 65px;
 		}
-
-
+@media screen and (min-width: 580px) {
+    div.nav li {
+    padding-left: 26px;
+    }
+    div.nonProfitText{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 488px;
+		}
+		div.nonProfitText2{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 488px;
+			text-align: center;
+		}
+    }
+    
+@media screen and (max-width: 580px) {
+    div.nav li {
+    padding-left: 10;
+    }
+    div.nonProfitText{
+		  font-size: 45px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 388px;
+			text-align: center;
+			}
+		div.nonProfitText2{
+		  font-size: 45px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 388px;
+			text-align: center;
+			}
+    }
 		
 		}
 		</style>
@@ -171,7 +216,7 @@
 		<div class="logo"><img src="images/logo.jpg" height="76" width="300"/></div>	
   <div class="navHolder">
 		<div class="nav">
-		<div class="circle"></div>
+	<!--	<div class="circle"></div> -->
 			<ul id="navi">
 				<li><a href="index">home</a></li>	
 				<li><a href="about"><div class="page">about</div></a></li>
