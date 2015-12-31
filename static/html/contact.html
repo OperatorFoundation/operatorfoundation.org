@@ -10,8 +10,9 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
+		div.nonProfitTextSmall a:link {text-decoration:none;color:#86d3eb;}
 		
-		body{
+			body{
 	   	float: left;
 			border: 0;
 			margin: 0;
@@ -30,21 +31,17 @@
 			height: 76px;
 			margin: 15px auto;
 		}
-		div.nonProfitTextSmall a:link {text-decoration:none;color:#ffffff;}
-		
 		a:link {text-decoration:none;color:#363636;}
-	
 		a:visited {text-decoration:none;color:#363636;}
 		a:hover {text-decoration:none;color:#363636;}
 		a:active {text-decoration:none;color:#ffffff;}
+	
 		div.navHolder{
   		background-color: #f0f0f0;
 			width: 100%;
 			height: 60px;
-			z-index: -2;
-			position: relative;
 		}
-		div.nav{
+div.nav{
 			font-family: 'Quicksand', helvetica, arial, sans-serif;
 			color: #363636;
 			width: 476px;
@@ -54,15 +51,17 @@
 		}
 		div.nav li{
 			float: left;
-			padding-left: 26px;
 			padding-right: 2px;
 			padding-top: 25px;
 			padding-bottom: 8px;
+			list-style: none;
 		}
 		div.page{
-			color: #ffffff;
+			color: #86d3eb;
 		}
-		div.circle{
+		
+		
+	/*	div.circle{
 			width: 108px;
 			height: 109px;
 			background-color: #202020;
@@ -71,9 +70,10 @@
 	        border-radius: 10em;
 	        z-index: -1;
 	        position: absolute;
-	        margin-left: 328px;
+	        margin-left: 37px;
 	        margin-top: 5px;
 		}
+		*/
 		div.banTop{
 		  border-top: 1px solid #202020;
 			width: 100%;
@@ -107,7 +107,6 @@
 			color: #ffffff;
 			margin: 10px auto;
 			width: 488px;
-			text-align: center;
 		}
 				div.nonProfitText2{
 		  font-size: 48px;
@@ -158,10 +157,55 @@
 			text-align: center;
 			line-height: 65px;
 		}
-
-
-		
+@media screen and (min-width: 580px) {
+    div.nav li {
+    padding-left: 26px;
+    }
+    div.nonProfitText{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 488px;
+			text-align: center;
 		}
+		div.nonProfitText2{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 488px;
+			text-align: center;
+		}
+    }
+    
+@media screen and (max-width: 580px) {
+    div.nav li {
+    padding-left: 10;
+    }
+    div.nonProfitText{
+		  font-size: 45px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 388px;
+			text-align: center;
+			}
+		div.nonProfitText2{
+		  font-size: 45px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 388px;
+			text-align: center;
+			}
+    }
+		
+		}	
 		</style>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
