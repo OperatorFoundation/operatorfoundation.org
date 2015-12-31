@@ -12,6 +12,7 @@
     <style type="text/css">
 		
 		body{
+	   	float: left;
 			border: 0;
 			margin: 0;
 			padding: 0;
@@ -20,148 +21,191 @@
 			background-color: #ffffff;
 		}
 		div.header{
+		  float: left;
 			width: 100%;
-			height: 86px;
 			margin: 0 auto;
 		}
 		div.logo{
 			width: 300px;
 			height: 76px;
-			float: left;
-			background-image: url("images/logo.png");
-			margin-top: 5px;
-			margin-left: 10px;
+			margin: 15px auto;
 		}
 		a:link {text-decoration:none;color:#363636;}
 		a:visited {text-decoration:none;color:#363636;}
 		a:hover {text-decoration:none;color:#363636;}
 		a:active {text-decoration:none;color:#ffffff;}
-		div.nav{
+	
+		div.navHolder{
+  		background-color: #f0f0f0;
+			width: 100%;
+			height: 60px;
+		}
+div.nav{
 			font-family: 'Quicksand', helvetica, arial, sans-serif;
-			float: right;
 			color: #363636;
+			width: 476px;
+			height: 60px;
 			font-size: 20px;
-			margin-right: 10px;
+			margin: 0 auto;
 		}
 		div.nav li{
 			float: left;
-			padding-left: 26px;
 			padding-right: 2px;
-			padding-top: 20px;
+			padding-top: 25px;
 			padding-bottom: 8px;
+			list-style: none;
 		}
 		div.page{
-			color: #ffffff;
+			color: #94e2a6;
 		}
-		div.topbit{
+		
+		
+	/*	div.circle{
+			width: 108px;
+			height: 109px;
+			background-color: #202020;
+			-moz-border-radius: 10em;
+	        -webkit-border-radius: 10em;
+	        border-radius: 10em;
+	        z-index: -1;
+	        position: absolute;
+	        margin-left: 37px;
+	        margin-top: 5px;
+		}
+		*/
+		div.banTop{
+		  border-top: 1px solid #202020;
 			width: 100%;
-			height: 558px;
-			background-image: url("images/topimage.png");
-			background-repeat: no-repeat;
+			background-color: #363636;
+			float: left;
+			}
+		div.banBottom{
+			width: 100%;
 			background-color: #f0f0f0;
+			float: left;
+			}
+		div.banBottom2{
+			width: 100%;
+			background-color: #ffffff;
+			float: left;
+			}
+		div.world{
+		  height: 400px;
+			width: 400px;
+			margin: 20px auto;
+			}
+		div.nonProfit{
+		  margin-bottom: 15px;
+			width: 100%;
+			float: left;
 		}
-		div.nonprofit{
-			color: #363636;
-			width: 462px;
-			height: 64px;
-			padding-top: 124px;
-			padding-left: 564px;
-			font-size: 50px;
-			font-family: 'Lato', sans-serif;
+		div.nonProfitText{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
 			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 488px;
 		}
-		div.opdescription{
-		color: #363636;
-		width: 586px;
-		height: 78px;
-		padding-top: 68px;
-		padding-left: 568px;
-		font-size: 20px;
-		font-family: 'Quicksand', helvetica, arial, sans-serif;
+				div.nonProfitText2{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 488px;
+			text-align: center;
 		}
-		div.large{
-		font-size: 50px;
-		font-family: 'Lato', sans-serif;
-		font-weight: 900;
-		text-align: center;
+		div.foundText{
+		  font-size: 50px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 100%;
+			text-align: center;
 		}
-		div.sponsor{
+		div.nonProfitTextSmall{
+  		font-family: 'Quicksand', sans-serif;
+			color: #ffffff;
+			margin: 0 auto;
+			width: 90%;
+			font-size: 20px;
+			text-align: center;
+		}
+				div.nonProfitTextSmall2{
+  		font-family: 'Quicksand', sans-serif;
+			color: #363636;
+			margin: 0 auto;
+			width: 90%;
+			font-size: 20px;
+			text-align: center;
+		}
+		div.sponsorText{
+  		font-family: 'Lato', sans-serif;
+  		font-weight: 900;
+			color: #ffffff;
+			margin: 0px auto;
 			width: 333px;
 			height: 70px;
 			background-color: #94e2a6;
 			-moz-border-radius: 10em;
-	        -webkit-border-radius: 10em;
-	        border-radius: 10em;
-	        margin-left: 566px;
+	    -webkit-border-radius: 10em;
+	    border-radius: 10em;
+			font-size: 25px;
+			text-align: center;
+			line-height: 65px;
 		}
-
-		div.bottombit{
-		width: 100%;
-		height: 200px;
-		background-color: #f0f0f0;
+@media screen and (min-width: 580px) {
+    div.nav li {
+    padding-left: 26px;
+    }
+    div.nonProfitText{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 488px;
+			text-align: center;
 		}
-		div.bottombit2{
-		width: 100%;
-		height: 295px;
-		background-color: #ffffff;
+		div.nonProfitText2{
+		  font-size: 48px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 488px;
+			text-align: center;
 		}
-		div.bottombit3{
-		width: 100%;
-		height: 800px;
-		background-color: #f0f0f0;
+    }
+    
+@media screen and (max-width: 580px) {
+    div.nav li {
+    padding-left: 10;
+    }
+    div.nonProfitText{
+		  font-size: 45px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #ffffff;
+			margin: 10px auto;
+			width: 388px;
+			text-align: center;
+			}
+		div.nonProfitText2{
+		  font-size: 45px;
+  		font-family: 'Lato', sans-serif;
+			font-weight: 900;
+			color: #363636;
+			margin: 10px auto;
+			width: 388px;
+			text-align: center;
+			}
+    }
+		
 		}
-		div.bottombit4{
-		width: 100%;
-		height: 500px;
-		background-color: #ffffff;
-		}
-		div.item{
-			width: 33%;
-			float: left;
-			font-family: 'Quicksand', helvetica, arial, sans-serif;
-	        text-align: center;
-	        padding-top: 22px;
-	        color: #363636;
-	    	font-size: 22px;
-		}
-		div.description{
-			font-family: 'Quicksand', helvetica, arial, sans-serif;
-	        text-align: center;
-	        padding: 15px;
-	        color: #363636;
-	        font-size: 16px;
-		}
-		div.footer{
-			width: 100%;
-			height: 150px;
-		}
-		div.sponz{
-			width: 100%;
-			height: 100px;
-			background-color: #f0f0f0;
-		}
-		div.sponsor2{
-		width: 333px;
-		height: 70px;
-		background-color: #94e2a6;
-		-moz-border-radius: 10em;
-        -webkit-border-radius: 10em;
-        border-radius: 10em;
-        margin: 0 auto;
-        }
-        div.sponsortext{
-			font-size: 30px;
-	        color: #ffffff;
-	        font-family: 'Quicksand', helvetica, arial, sans-serif;
-	        text-align: center;
-	        padding-top: 23px;
-		}
-        div.ugh{ 
-		height: 72px;
-		width: 100%;
-		color: #f0f0f0
-        }
-	</style>
+		</style>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
 
@@ -170,11 +214,10 @@
 
 <body>
 	<div class="header">
-		<div class="logo">	
-		</div>	
-		
+		<div class="logo"><img src="images/logo.jpg" height="76" width="300"/></div>	
+  <div class="navHolder">
 		<div class="nav">
-		<div class="circle"></div>
+	<!--	<div class="circle"></div> -->
 			<ul id="navi">
 				<li><a href="index">home</a></li>	
 				<li><a href="about">about</a></li>
@@ -183,101 +226,145 @@
 			</ul>
 		</div>
 	</div>
-	<div class="bottombit">
-		<div class="large" style="padding-top: 20px;">Operator Foundation Media Kit and Fact Sheet</div>
-		<div class="item">
-			Company
-			<div class="description">Operator Foundation
-			</div>
-		</div>
-		<div class="item">
-			Founding Date
-			<div class="description"> 2014
-			</div>
-		</div>
-		<div class="item">
-			Website
-			<div class="description"> <a href="http://operatorfoundation.org/">http://operatorfoundation.org/</a>
-			</div>
-		</div>
 	</div>
-	
-		<div class="bottombit2">
-		<div class="item">
-			Description
-			<div class="description"> The Operator Foundation was founded in 2014 in Austin, Texas. Our purpose is to promote internet freedom, open communication and global internet security through technology development, deployment, and education. We develop technologies to facilitate access to credible and relevant information and open communication around the world.
-			</div>
-		</div>
-		<div class="item">
-			History
-			<div class="description"> 2014 Founded <br>
-			</div>
-		</div>
-		<div class="item">
-			Projects
-			<div class="description"> <a href="projects">Edith</a> <br><br> <a href="projects">Postcard</a>
-			</div>
-		</div>
-	</div>
-	
-		<div class="bottombit3">
-		<div class="large" style="padding-top: 20px;">Images</div>
-		<div class="item">
-			<img src="images/BrandonSquare.png" height="400" width="400"/>
-			Brandon Wiley
-			<div class="description"> President
-			</div>
-		</div>
-		<div class="item">
-			<img src="images/CorieSquare.jpg" height="400" width="400"/>
-			Corie Johnson
-			<div class="description"> Vice President
-			</div>
-		</div>
-		<div class="item">
-			<img src="images/Donaldsquare.jpg" height="400" width="400"/>
-			Donald Jackson
-			<div class="description"> Secretary
-			</div>
-		</div>
-	<div class="item">
-			Lewis Weil
-			<div class="description"> Treasurer
-			</div>
-		</div>
-	</div>
-	
-			<div class="bottombit4">		
-			<div class="large" style="padding-top: 20px;">Logos and Icons</div>
-		<div class="item">
+	<div class="banTop">
+  	<div class="nonProfit">
 
-			<div class="description">
-			</div>
-		</div>
-		<div class="item">
-				<img src="images/oplogo.png"/>
-			<div class="description"> <a href="logo.zip">Click here to download our our logos in a .zip file</a>
-			</div>
-		</div>
-		<div class="item">
-			
-			<div class="description"> 
-			</div>
-		</div>
+    	<div class="nonProfitText">
+    	Operator Foundation Media Kit and Fact Sheet
+    	</div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall">
+    	 <strong>Company</strong> - Operator Foundation
+</br>
+<strong>Founding Date</strong> - 2014
+</br>
+<strong>Website</strong> - http://operatorfoundation.org/
+    	</div>
+  	</div>	
+  
+	
 	</div>
 	
-	<div class="footer">
-		<div class="sponz">
-		  <div class="ugh">secret text, shhh
-			<div class="sponsor2">
+	<div class="banBottom">
+  	   <div class="nonProfit">
 
-					<div class="sponsortext"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NEJ8AS6LEPAGE">become a sponsor</a></div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall2">
+    	 <strong>Description</strong> - 
+The Operator Foundation was founded in 2014 in Austin, Texas. Our purpose is to promote internet freedom, open communication and global internet security through technology development, deployment, and education. We develop technologies to facilitate access to credible and relevant information and open communication around the world.
+    	</br>
+<strong>History</strong> - 
+2014 Founded 
+	</br>
+		</br>
+<strong>Projects</strong> 
+	</br>
+<a href="projects">Edith</a> 
+	</br>
+ <a href="projects">Postcard</a>
+    	</div>
+  	</div>	
+	 </div>
+	 
+	 
+	 <div class="banBottom2">
+  	   <div class="nonProfit">
+  	   <div class="world">
+  	     <img src="BrandonSquare.png" height="400" width="400"/>
+  	   </div>
+    	<div class="nonProfitText2">
+    	Brandon Wiley
+    	</div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall2">
+    	 <em>President</em>
+    	</br>
 
-			</div>
-		  </div>
-		</div>
-		<div class="description"> Copyright 2015 The Operator Foundation</div>
-	</div>
+    	</div>
+  	</div>	
+	 </div>
+	 
+	<div class="banBottom">
+  	   <div class="nonProfit">
+  	   <div class="world">
+  	     <img src="images/CorieSquare.jpg" height="400" width="400"/>
+  	   </div>
+    	<div class="nonProfitText2">
+    	Corie Johnson
+    	</div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall2">
+    	 <em>Vice President</em>
+    	</br>
+
+    	</div>
+  	</div>	
+	 </div>
+	 
+	 
+	 <div class="banBottom2">
+  	   <div class="nonProfit">
+  	   <div class="world">
+  	     <img src="images/Donaldsquare.jpg" height="400" width="400"/>
+  	   </div>
+    	<div class="nonProfitText2">
+    	Donald Jackson
+    	</div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall2">
+    	 <em>Secretary</em>
+    	</div>
+  	</div>	
+	 </div>
+	 
+	<div class="banBottom">
+  	   <div class="nonProfit">
+  	   <div class="world">
+  	     <img src="images/lewisWeil.png" height="400" width="400"/>
+  	   </div>
+    	<div class="nonProfitText2">
+      	Lewis Weil
+    	</div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall2">
+    	 <em>Treasurer</em>
+    	</br>
+
+    	</div>
+  	</div>	
+	 </div>
+	 
+	 
+	 <div class="banBottom2">
+  	   <div class="nonProfit">
+  	   <div class="world">
+  	     <img src="images/oplogo.png" height="400" width="400"/>
+  	   </div>
+    	<div class="nonProfitText2">
+    	Logos
+    	</div>
+  	</div>
+  
+  	<div class="nonProfit">
+    	<div class="nonProfitTextSmall2">
+    	 <em><a href="logo.zip">Click here to download our our logos in a .zip file</a></em>
+
+    	</div>
+  	</div>	
+	 </div>
 
 </body>
 </html>
