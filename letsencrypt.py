@@ -23,7 +23,11 @@ class LetsEncryptHandler(RequestHandler):
     def get(self, challenge):
         self.response.headers['Content-Type'] = 'text/plain'
         responses = {
-                    'bY-vrwn-BFJVba0lZBU-mHKzc6bqwDYYcKzrC5O-nEs': 'bY-vrwn-BFJVba0lZBU-mHKzc6bqwDYYcKzrC5O-nEs.KxZb0_QrlYj56nhfSzUQOGlYZYh2lwWnlERQAgXv-Pg'
+                    'bY-vrwn-BFJVba0lZBU-mHKzc6bqwDYYcKzrC5O-nEs': 'bY-vrwn-BFJVba0lZBU-mHKzc6bqwDYYcKzrC5O-nEs.KxZb0_QrlYj56nhfSzUQOGlYZYh2lwWnlERQAgXv-Pg',
+                    '6H2A1G74PxPg5kWw9Nf9ftXu_pQyTNG3rAFiUGoY2wE': '6H2A1G74PxPg5kWw9Nf9ftXu_pQyTNG3rAFiUGoY2wE.KxZb0_QrlYj56nhfSzUQOGlYZYh2lwWnlERQAgXv-Pg',
+                    'mZBJri6KmUMk5PhCNL6Q8LK6vO3VrKBfKjrBNmCS15g': 'mZBJri6KmUMk5PhCNL6Q8LK6vO3VrKBfKjrBNmCS15g.KxZb0_QrlYj56nhfSzUQOGlYZYh2lwWnlERQAgXv-Pg',
+                    '3BWwqM8__8TShJHoBMZCDW54rFVbkl4abhwF3J7Qoi0': '3BWwqM8__8TShJHoBMZCDW54rFVbkl4abhwF3J7Qoi0.KxZb0_QrlYj56nhfSzUQOGlYZYh2lwWnlERQAgXv-Pg',
+                    '3BWwqM8__8TShJHoBMZCDW54rFVbkl4abhwF3J7Qoi0': '3BWwqM8__8TShJHoBMZCDW54rFVbkl4abhwF3J7Qoi0.KxZb0_QrlYj56nhfSzUQOGlYZYh2lwWnlERQAgXv-Pg'
                 }
         self.response.write(responses.get(challenge, ''))
 
